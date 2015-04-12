@@ -2,11 +2,14 @@
 # pre-commit.sh
 
 # stash un-added changes
+echo "Stashing non-staged changes"
 git stash -q --keep-index
 
 # update resume pdf with PhantomJS
+echo "Updating the pdf resumé rendition"
 phantomjs rasterize.js resume.html resume.pdf
 git add resume.pdf
 
 # pop stashed changes
+echo "Popping stashed changes"
 git stash pop -q
