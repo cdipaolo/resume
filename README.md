@@ -10,6 +10,9 @@ Look at the included example (my resumé) under resume.html. The pdf version is 
 git clone https://github.com/cdipaolo/resume.git
 cd resume
 
+# Remove the sample git hook
+rm .git/hooks/pre-commit.sample
+
 # Add pre-commit hook to update the pdf rendition
 ln -s pre-commit .git/hooks/pre-commit
 
