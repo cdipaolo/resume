@@ -16,7 +16,7 @@ rm .git/hooks/pre-commit.sample
 # Add pre-commit hook to update the pdf rendition
 ln -s pre-commit .git/hooks/pre-commit
 
-# If on mac modify premissions for pre-commit hook
+# If on mac modify permissions for pre-commit hook
 chmod +x pre-commit
 ```
 
