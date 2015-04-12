@@ -17,7 +17,7 @@ rm .git/hooks/pre-commit.sample
 ln -s pre-commit .git/hooks/pre-commit
 
 # If on mac modify premissions for pre-commit hook
-chmod +x .git/hooks/pre-commit
+chmod +x pre-commit
 ```
 
 that's it!
