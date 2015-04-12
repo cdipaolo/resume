@@ -15,7 +15,7 @@
         border-top: 20px solid #e74c4c;
         position:relative;
         margin:0 auto;
-        top:0px;
+        top:-2px;
       }
       .header {
         width:100%;
@@ -40,7 +40,7 @@
         margin-top:0px;
       }
       .header > .social-media {
-        width:135px;
+        width:190px;
         margin:0px;
         color:#ffffff;
         position:absolute;
@@ -58,7 +58,7 @@
         position:absolute;
       }
       #left {
-        left:-10px;
+        left:-5px;
       }
       .cv > * {
         font-family: 'Open Sans', sans-serif;
@@ -89,6 +89,10 @@
         font-size:      17px;
         margin-top:    6px;
         margin-bottom: 0px;
+        display:inline-block;
+      }
+      .head {
+        display:block;
       }
       .section p {
         font-size:     14px;
@@ -101,6 +105,10 @@
         font-size: 12px;
         margin-top: 3px;
       }
+      #right {
+        right:    15px;
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -109,26 +117,30 @@
 
       <ul class="social-media">
         <li><img class="icon" id="left" src="GitHub-Mark-Light-120px-plus.png"/>  @github</li>
-        <li><img class="icon" id="left" src="Twitter_logo_white.png"/>  @twitter</li>
-        <li><img class="icon" id="left" src="phone-30-512.png"/>  pho nen umbr</li>
+        <!--<li><img class="icon" id="left" src="Twitter_logo_white.png"/>  @twitter</li>-->
+        <li><img class="icon" id="left" src="email-5-512.png"/>  your@email.com</li>
+        <li><img class="icon" id="left" src="phone-30-512.png"/>  123 456 7890</li>
       </ul>
-      <h2><img class="icon" style="left:13px;" src="home-4-512.png"/>  2556 Address Goes, Here City</h2>
+      <h2><img class="icon" style="left:13px;" src="home-4-512.png"/>  2516 Your Address, Your City</h2>
     </div>
 
     <div class="arrow-down"></div>
 
     <div class="cv">
       <div class="section">
-        <h1>Section</h1>
+        <h1>Employment</h1>
         <div class="category">
-          <h2>Header</h2>
+          <div class="head">
+            <h2>Company Name</h2>
+            <h2 id="right">January 2015 - Present</h2>
+          </div>
           <p>
-            description
+            overview of role and glance over description of what you did
           </p>
           <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
+            <li>item describing something specific you did</li>
+            <li>another item like above</li>
+            <li>yet another item ... you get the point</li>
           </ul>
         </div>
       </div>

@@ -15,10 +15,10 @@
         border-top: 20px solid #e74c4c;
         position:relative;
         margin:0 auto;
-        top:0px;
+        top:-2px;
       }
       .header {
-        width:100%;
+        width:1000px;
         height:100px;
         background-color:#e74c4c;
         font-family:'Open Sans', sans-serif;
@@ -40,11 +40,11 @@
         margin-top:0px;
       }
       .header > .social-media {
-        width:135px;
+        width:190px;
         margin:0px;
         color:#ffffff;
         position:absolute;
-        right:0px;
+        left:calc(1000px - 240px);
         top:10px;
         list-style-type:none;
         font-family:'Open Sans', sans-serif;
@@ -58,7 +58,7 @@
         position:absolute;
       }
       #left {
-        left:-10px;
+        left:-5px;
       }
       .cv > * {
         font-family: 'Open Sans', sans-serif;
@@ -89,6 +89,10 @@
         font-size:      17px;
         margin-top:    6px;
         margin-bottom: 0px;
+        display:inline-block;
+      }
+      .head {
+        display:block;
       }
       .section p {
         font-size:     14px;
@@ -101,6 +105,10 @@
         font-size: 12px;
         margin-top: 3px;
       }
+      #right {
+        right:    15px;
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -109,7 +117,7 @@
 
       <ul class="social-media">
         <li><img class="icon" id="left" src="GitHub-Mark-Light-120px-plus.png"/>  @cdipaolo</li>
-        <li><img class="icon" id="left" src="Twitter_logo_white.png"/>  @cdipaolo96</li>
+        <li><img class="icon" id="left" src="email-5-512.png"/>  cdipaolo96@gmail.com</li>
         <li><img class="icon" id="left" src="phone-30-512.png"/>  949 300 3774</li>
       </ul>
       <h2><img class="icon" style="left:13px;" src="home-4-512.png"/>  2516 Vista Drive, Newport Beach</h2>
@@ -119,16 +127,36 @@
 
     <div class="cv">
       <div class="section">
-        <h1>Section</h1>
+        <h1>Employment</h1>
         <div class="category">
-          <h2>Header</h2>
+          <div class="head">
+            <h2>soulsoup</h2>
+            <h2 id="right">January 2015 - Present</h2>
+          </div>
           <p>
-            description
+            Lead software engineer for a 501c nonprofit working to leverage more
+            personal connections between sponsors who donate to soup kitchens
+            and the homeless they donate to while cutting overhead significantly.
           </p>
           <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
+            <li>
+              Created a scalable, well documented backend API in idiomatic
+              Golang that connects to a PostgreSQL relational database
+              and Amazon Web Services.
+            </li>
+            <li>
+              Developed thorough integration and unit testing techniques which
+              caught and can catch software bugs before they reach the consumer
+              or harm data. 
+            </li>
+            <li>
+              Used Agile and SCRUM techniques to speed up development time under
+              limited resources.
+            </li>
+            <li>
+              Collaborated with other developers with git, through GitHub, to
+              itemize and distribute tasks according to SCRUM workflow.
+            </li>
           </ul>
         </div>
       </div>
