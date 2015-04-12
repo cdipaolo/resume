@@ -12,6 +12,9 @@ cd resume
 
 # Add pre-commit hook to update the pdf rendition
 ln -s pre-commit .git/hooks/pre-commit
+
+# If on mac modify premissions for pre-commit hook
+chmod +x .git/hooks/pre-commit
 ```
 
 that's it!
