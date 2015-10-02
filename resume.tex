@@ -1,0 +1,102 @@
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf (William) Conner DiPaolo} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+\moveleft.5\hoffset\centerline{2516 Vista Drive} % Your address
+\moveleft.5\hoffset\centerline{Newport Beach, California 92663}
+\moveleft.5\hoffset\centerline{(949) 300 3774}
+\moveleft.5\hoffset\centerline{cdipaolo96@gmail.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+{\sl Joint Computer Science \& Math,}  \hfill September 2015 - Present \\
+Harvey Mudd College, Claremont, CA\\
+ 
+%----------------------------------------------------------------------------------------
+%   Technology SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TECHNOLOGY \\ SKILLS} 
+
+{\sl Programming Languages:} Go, Javascript, SQL, Python. \\
+{\sl Web Backend Technologies:} PostgreSQL, Martini, Golang Net/HTTP Libraries, Linode, AWS S3. \\
+{\sl Web Frontend Technologies:} AngularJS, Ionic Framework, HTML/CSS. \\
+{\sl Software Engineering:} Agile, Scrum, Version Control. \\
+{\sl Software:} Git, Bash, Vim, Gulp. \\
+ 
+%----------------------------------------------------------------------------------------
+%   PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}
+
+{\sl Cognative Media Evangalist} \hfill October 2015 - Present \\
+Veritone Media
+\begin{itemize}
+\item Working with professors to integrate research into scalable microservices.
+\item Building open source media analysis platforms to interact with Veritone's Cognative Media Analysis platform.
+\end{itemize}
+
+{\sl Lead Software Engineer} \hfill December 2014 - August 2015 \\
+Soulsoup
+\begin{itemize}
+\item Developed a scalable, tested REST API in Golang which interacted a PostgreSQL database.
+\item Implemented and helped design a cross platform mobile frontend within Ionic Framework using AngularJS, HTML, and CSS.
+\item Ran Dev-Ops to set up servers and distribute traffic to the REST API across multiple nodes.
+\end{itemize} 
+
+{\sl Intern} \hfill July 2015 - August 2015 \\
+Veritone Media (assoc. with Soulsoup)
+\begin{itemize}
+\item Developed a production ready, open source sentiment analysis engine using my own machine learning library (using a Naive Bayes model on IMDB data.)
+\item Initiated a company wide research project on logo recognition within video data.
+\end{itemize}
+
+\section{OPEN SOURCE}
+
+{\sl GOML} \hfill github.com/cdipaolo/goml
+\begin{itemize}
+\item Developed the only machine learning library to use data channels (as an option over batch learning) to train models in an 'Online' and parallelizable way.
+\item Wrote the second most starred Golang machine learning libary on GitHub.
+\item Implemented 11 diverse machine learning models in a well documented, heavily tested, and intuitive API under an MIT license.
+\end{itemize} 
+
+{\sl Sentiment} \hfill github.com/cdipaolo/sentiment
+\begin{itemize}
+\item Trained a Naive Bayes model, using GOML, on IMDB reviews to create a portable, batteries included sentiment analysis engine under an MIT license.
+\item Modularized the platform to be easily extendable to adding new languages in the future.
+\item Documented and tested the model against real world expectations to satisfy requirements for production use.
+\end{itemize}
+
+{\sl Sentiment Server} \hfill github.com/cdipaolo/sentiment-server
+\begin{itemize}
+\item Integrated Sentiment into an open source (MIT license, again) RESTful API.
+\item Abstracted company specific details to a config file to leave the service open source.
+\item Added modularity to have an extendable number of text retrieval hooks in anticipation of future company needs.
+\item Optimized performance to analyze multiple paragraphs of text in around 200ms under relative heavy load (over 100,000 requests a minute.)
+\end{itemize}
+
+
+\end{resume}
+\end{document}
