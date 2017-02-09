@@ -10,8 +10,8 @@
 \name{Conner DiPaolo} % Your name at the top
 
  
-\address{github.com/cdipaolo}
-\address{cdipaolo@hmc.edu - (949) 300 3774}
+\address{\textsf{github.com/cdipaolo}}
+\address{\textsf{cdipaolo@hmc.edu} -- \textsf{(949) 300 3774}}
 
 \begin{document}
  
@@ -21,22 +21,25 @@
  
 \begin{rSection}{EXPERIENCE}
 
-%\begin{rSubsection}{Veritone Media}{October 2015 - Present}{Cognative Media Evangelist}
+\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2016 - August 2016}{Intern -- {\sl Spam Team}}
 
-%\item Working with professors to integrate research into scalable microservices.
-%\item Building open source media analysis platforms to interact with Veritone's Cognative Media Analysis platform.
-%\end{rSubsection}
-
-    \begin{rSubsection}{Veritone Media - {\it Newport Beach, CA}}{July 2015 - August 2015}{Intern - {\sl Venture funded series B startup giving corporations actionable insight into media.}}
-
-\item Developed a production ready, open source sentiment analysis engine using my own machine learning library (using a Naive Bayes model on IMDB data.)
-\item Initiated a company wide research project on logo recognition within video data.
+\item Primary contributor to a widely used database replication service marshalling Kafka messages into MySQL
+    statements.
+\item Re-trained a stale language model for spam detection. Improved real world performance significantly
+    and streamlined re-training flow for future use.
+\item Integral in design and implementation of a model development framework used across the spam team. Implemented
+    first model (currently in production) using this framework.
 \end{rSubsection}
 
-\begin{rSubsection}{Soulsoup – {\it Newport Beach, CA}}{December 2014 - August 2015}{Lead Engineer - {\sl Non-profit networking people who give with people who need. Funded by Veritone founder.}}
+\begin{rSubsection}{Veritone Media -- {\it Newport Beach, CA}}{July 2015 - August 2015}{Intern -- {\sl Venture funded series B startup giving corporations actionable insight into media.}}
 
-\item Developed a scalable, tested REST API in Golang which interacted a PostgreSQL database.
-\item Implemented and helped design a cross platform mobile frontend within Ionic Framework using AngularJS, HTML, and CSS.
+\item Developed a production ready, open source sentiment analysis engine using my own machine learning library (using a Naive Bayes model on IMDB data.)
+\end{rSubsection}
+
+\begin{rSubsection}{Soulsoup -- {\it Newport Beach, CA}}{December 2014 - August 2015}{Lead Engineer -- {\sl Non-profit networking people who give with people who need. Funded by Veritone founder.}}
+
+\item Developed a scalable, tested REST API in Golang which interacted a PostgreSQL database and implemented a
+    cross platform mobile frontend.
 \item Ran Dev-Ops to set up servers and distribute traffic to the REST API across multiple nodes.
 \end{rSubsection} 
 
@@ -48,24 +51,11 @@
 
 \begin{rSection}{OPEN SOURCE}
 
-\begin{rSubsection}{GOML}{github.com/cdipaolo/goml}{Creator}
+\begin{rSubsection}{GOML}{\textsf{github.com/cdipaolo/goml}}{Creator}
 
 \item Developed the only machine learning library to use data channels (as an option over batch learning) to train models in an 'Online' and parallelizable way.
-\item Wrote the second most starred Golang machine learning libary on GitHub (400 stars).
+\item Wrote the second most starred Golang machine learning libary on GitHub (600 stars).
 \item Implemented 11 diverse machine learning models in a well documented, heavily tested, and intuitive API.
-\end{rSubsection}
-
-\begin{rSubsection}{Sentiment}{github.com/cdipaolo/sentiment}{Creator}
-
-\item Trained a Naive Bayes model, using GOML, on IMDB reviews to create a portable, batteries included sentiment analysis engine under an MIT license.
-\item Modularized the platform to be easily extendable to adding new languages in the future.
-\item Documented and tested the model against real world expectations to satisfy requirements for production use.
-\end{rSubsection}
-
-\begin{rSubsection}{Sentiment Server}{github.com/cdipaolo/sentiment-server}{Creator}
-
-\item Abstracted company specific details to a config file to leave the service open source while adding modularity.
-\item Optimized performance to analyze multiple paragraphs of text in around 200ms under relatively heavy load (over 100,000 requests a minute.)
 \end{rSubsection}
 
 \end{rSection}
@@ -78,21 +68,27 @@
 \begin{rSection}{EDUCATION}
 
 {\bf Harvey Mudd College} \hfill {\em Expected Graduation 2019} \\ 
-Joint Computer Science \& Math
+Mathematics -- {\em 3.85 in-major GPA} \hfill {\em 3.75 GPA}\\
+
+\begin{rSubsection}{Math 189r}{\textsf{math189r.github.io}}{Teaching Assistant -- Mathematics of Big Data}
+
+\item Designed syllabus, created course materials, and wrote midterm with guidance from Professor Weiqing Gu.
+\item Lectured supplementary material and review sessions on Thursdays.
+\item Held office hours and graded student work, projects, and exams.
+\end{rSubsection}
 \end{rSection}
 
  
 %----------------------------------------------------------------------------------------
 %   Technology SKILLS SECTION
 %----------------------------------------------------------------------------------------
-
+\vfill
 \begin{rSection}{TECHNICAL SKILLS} 
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Go, Javascript, SQL, Python. \\
+Programming Languages & Python, SQL, Go, Javascript. \\
+Numerical Softwate & Numpy, Scipy, Pandas, Matplotlib, Matlab.\\
 Web Backend Technologies & PostgreSQL, Martini, Golang Net/HTTP Libraries, Linode, AWS S3. \\
-Web Frontend Technologies & AngularJS, Ionic Framework, HTML/CSS. \\
-Software & Git, Bash, Vim, Gulp. 
 \end{tabular}
 \end{rSection}
 
