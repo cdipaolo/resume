@@ -9,7 +9,6 @@
 
 \name{Conner DiPaolo} % Your name at the top
 
- 
 \address{\textsf{github.com/cdipaolo}}
 \address{\textsf{cdipaolo@hmc.edu} -- \textsf{(949) 300 3774}}
 
@@ -18,29 +17,40 @@
 %----------------------------------------------------------------------------------------
 %   PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
- 
+
+\vspace{-1em}
 \begin{rSection}{EXPERIENCE}
+
+\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2017 - August 2017}{Intern -- {\sl Ad Creative}}
+
+\item Project lead for implementing the first trained model for advertisement photo selection
+    within Yelp. Allocated engineering work and contributed heavily to model training and
+    deployment infrastructure.
+\item Crafted the transition from an initial linear click-through rate prediction model to
+    a deep neural network (augmented ResNet) implemented in PyTorch.
+\item Designed, organized engineers, and heavily contributed to an internal web app for
+    automated Bayesian analysis of Yelp A/B tests with potential to be used across all of Ads.
+\end{rSubsection}
 
 \begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2016 - August 2016}{Intern -- {\sl Spam Team}}
 
-\item Primary contributor to a widely used database replication service marshalling Kafka messages into MySQL
-    statements.
+\item Primary contributor to a widely used database replication service marshalling Kafka messages into MySQL.
 \item Re-trained a stale language model for spam detection. Improved real world performance significantly
-    and streamlined re-training flow for future use.
+    and streamlined re-training for future use. A year later it's the best performing
+    spam model in that ecosystem.
 \item Integral in design and implementation of a model development framework used across the spam team. Implemented
     first model (currently in production) using this framework.
 \end{rSubsection}
 
-\begin{rSubsection}{Veritone Media -- {\it Newport Beach, CA}}{July 2015 - August 2015}{Intern -- {\sl Venture funded series B startup giving corporations actionable insight into media.}}
+\begin{rSubsection}{Veritone Media -- {\it Newport Beach, CA}}{July 2015 - August 2015}{Intern -- {\sl Public company giving corporations actionable insight into media.}}
 
 \item Developed a production ready, open source sentiment analysis engine using my own machine learning library (using a Naive Bayes model on IMDB data.)
 \end{rSubsection}
 
 \begin{rSubsection}{Soulsoup -- {\it Newport Beach, CA}}{December 2014 - August 2015}{Lead Engineer -- {\sl Non-profit networking people who give with people who need. Funded by Veritone founder.}}
 
-\item Developed a scalable, tested REST API in Golang interacting with a PostgreSQL database, and a
-    cross platform mobile frontend.
-\item Ran Dev-Ops to set up servers and distribute traffic to the REST API across multiple nodes.
+\item Developed a scalable API in Go interacting with a PostgreSQL database and a
+    mobile frontend.
 \end{rSubsection} 
 
 \end{rSection}
@@ -68,28 +78,14 @@
 \begin{rSection}{EDUCATION}
 
 {\bf Harvey Mudd College} \hfill {\em Expected Graduation 2019} \\ 
-Mathematics -- {\em 3.85 in-major GPA} \hfill {\em 3.75 GPA}\\
+Mathematics -- {\em 3.85 in-major GPA} \hfill {\em 3.75 GPA}
 
 \begin{rSubsection}{Math 189r}{\textsf{math189r.github.io}}{Teaching Assistant -- Mathematics of Big Data}
 
 \item Designed syllabus, created course materials, and wrote midterm with guidance from Professor Weiqing Gu.
-\item Lectured supplementary material and review sessions on Thursdays.
+\item Lectured supplementary material and review sessions weekly.
 \item Held office hours and graded student work, projects, and exams.
 \end{rSubsection}
-\end{rSection}
-
- 
-%----------------------------------------------------------------------------------------
-%   Technology SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\vfill
-\begin{rSection}{TECHNICAL SKILLS} 
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Python, SQL, Go, Javascript. \\
-Numerical Software & Numpy, Pandas, PyTorch, Matplotlib, SciPy, Matlab.\\
-Web Backend Technologies & PostgreSQL, Flask, Martini, Golang Net/HTTP Libraries, AWS S3. \\
-\end{tabular}
 \end{rSection}
 
 \end{document}
