@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{oldstyle}
+\moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\usepackage{pdfpages/pdfpages}
+\usepackage{scrextend,hyperref}
+\usepackage{xpatch/xpatch}
+\usepackage[url=false,
+    backend=biber,
+    style=authoryear,
+    doi=false,  
+    isbn=false,
+    backref=false,
+    dashed=false,
+    maxnames=99,
+    sorting=ydnt]{biblatex}
+
+\addbibresource{papers.bib}
+
+\name{William Conner}{DiPaolo}
+\address{301 Platt Boulevard}{Claremont, CA 91711}{United States of America}
+\phone[mobile]{+1~(949)~300~3774}
+\email{cdipaolo@hmc.edu}
+\homepage{github.com/cdipaolo}
+\extrainfo{United States Citizen}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+
+\cventry{2015-2019}{BSc Mathematics}{Harvey Mudd College}{Claremont, CA}{}{3.85 in-major GPA. 3.79 overall GPA. Deans List.}
+
+\section{Undergraduate Thesis}
+
+\cvitem{Title}{\emph{Randomized Numerical Linear Algebra and its Applications to Machine Learning}}
+\cvitem{Supervisors}{Weiqing Gu}
+\cvitem{Description}{Many machine learning problems reduce to linear algebra. We investigate the fundamentals of recent randomized algorithms for approaching these large matrix problems, for example proving lower bounds on randomized trace estimation, and apply these fundamentals to speeding up computations for large scale machine learning problems.}
+
+\section{Awards}
+
+\cventry{2018}{Giovanni Borrelli Mathematics Prize}{Harvey Mudd College}{}{}{}
+\cventry{2017}{Courtney S. Coleman Prize}{Harvey Mudd College}{}{}{}
+
+\section{Talks}
+
+\cventry{08/2016}{A Briskly Paced Overview of Convex Optimization}{Yelp}{San Francisco, CA}{}{}{}{}
+
+\section{Teaching Experience}
+
+\cventry{09-12/2018}{MATH173: Advanced Linear Algebra}{\\Teaching Assistant}{Harvey Mudd College}{}{}{}{Prepared syllabus and lectured some course materials.}\\
+
+\cventry{09-12/2016}{MATH189R: Mathematics of Big Data}{\\Teaching Assistant}{Harvey Mudd College}{}{}{}{Prepared syllabus and lectured some course materials.}
+
+\section{Research Experience}
+
+\cventry{09/2018-Present}{Randomized Numerical Linear Algebra}{Harvey Mudd College}{with Weiqing Gu}{}{}{Numerical questions like computing the number of eigenvalues of a gigantic matrix in the interval $[0,1]$ can be reduced approximately to computing traces of matrices for which matrix-vector products are much easier to compute than the matrix itself. \textbf{Randomized algorithms} for estimating these traces in the matrix query model goes back to 1990 but have seen recent interest in the machine learning community. I proved answers to fundamental questions about optimality of these randomized algorithms in the form of \textbf{lower bounds}, as well as showing why randomization is necessary, by using some classic probability bounds and tools from optimization theory like resisting oracles.}\\
+
+\cventry{06-08/2018}{Optical Communications}{Jet Propulsion Laboratory}{}{Deep Space Optical Communications Team}{}{Optical communications is slated to enter deep space for the first time with the Psyche mission in 2022. Fine-tune \textbf{control} of the telescope receiving this data is necessary to prohibit data loss at far range, but previous algorithms for this aren't designed for the high background noise and low resolution receivers. I closed this control loop by reducing our fine-tuning to signal intensity deconvolution via an \textbf{inverse problem}, proving these are equivalent using results from the 1980s concerning \textbf{mathematical program stability}. At this point, I was able to prove by concentration techniques \textbf{sample complexity bounds} on an existing deconvolution procedure, as well as making a small novel modification that speeds up computation by a factor of $2$ at no loss of accuracy. Our paper is undergoing release, but regardless these algorithms will make our communications link robust to known jitter in the receiver for the 2022 launch.}\\
+
+\cventry{05-12/2017}{Operator Theory}{Harvey Mudd College}{with Stephan Garcia}{}{}{Some physical systems can be modeled by self-adjoint operators on Hilbert space, but other times these systems are actually best modeled as less-studied complex-\emph{symmetric} operators. This work studied the properties of the more general $(m,C)$-complex symmetric operators. I was able to characterize, for example, when scalar shifts of a complex anti-symmetric operator are $(m,C)$-symmetric.}\\
+
+\cventry{05-12/2016}{Bayesian Statistics}{Harvey Mudd College}{with Weiqing Gu}{}{}{The densities of real world phenomena can often be written probabalistically as mixtures of simple distributions. In reality, however, both these simple distributions and their mixing weights vary over time or spacial information, and so accurate modeling requires incorporating variation in these parameters. I proposed using \textbf{latent Gaussian processes}, distributions over random functions, to incorporate these assumptions into \textbf{hierarchical models}. This, done intelligently, allowed us to specify accurate models for the movement of wolves under tagging measurements, or time-varying covariance between stock returns, for example.}
+
+\section{Industry Work}
+
+\cventry{06-08/2018}{Research Intern}{Jet Propulsion Laboratory}{Pasadena, CA}{Deep Space Optical Communications Team}{}{Statistical algorithms and concentration/sample complexity bounds for estimation and control of an optical communications link. See `Research Experience' section above for more details.}\\
+
+\cventry{05-08/2017}{Intern}{Yelp}{San Francisco, CA}{Ad Creative Team}{}{I was the first person at Yelp to seriously attack the problem of optimizing the photo we showed in these advertisements. I created both a \textbf{linear model} on photo metadata, as well as a \textbf{custom deep neural network} architecture based on a ResNet which linearly incorporated this same metadata, to predict click rates for every business' advertisement layout, also helping build \textbf{deployment infrastructure} for these notoriously hard-to-deploy models. These models were helpful to performance, with the deep neural network somewhat outperforming the linear model. Moreover, by maintaining \textbf{interpretibility within the deep model}, I was able to statistically interpret the affect of different metadata holding the \emph{photo content} fixed, discovering a long standing issue in the cropping infrastructure without ever having to look at the internals. In addition to my modeling work, I was able to design, rally engineering effort, and help build a web-app for \textbf{automated Bayesian A/B testing} with the potential to be used across all of Ads.}\\
+
+\cventry{05-08/2016}{Intern}{Yelp}{San Francisco, CA}{Spam Team}{}{Multiple modelling teams at Yelp were building ad-hoc systems to copy large amounts of data into their own servers for easy access without impacting other teams. To unify these approaches, I was the primary contributor to a \textbf{database replication} service based on Yelp's then-new data pipeline which marshalled Kafka messages into each team's individual MySQL clusters. In addition to this infrastructure work, I was able to do modelling work retraining and performing performance analysis for a stale \textbf{language model} detecting \textbf{hate speech and spam} under a team wide model development/deployment framework I helped design. This model is (at least a year later) the best performing within the whole team.}\\
+
+\cventry{07-08/2016}{Intern}{Veritone Media}{Newport Beach, CA}{}{}{I developed a sentiment analysis engine from scratch using my own machine learning library, with training data taken from IMDB reviews.}\\
+
+\cventry{12/2015-08/2016}{Lead Engineer}{Soulsoup}{Newport Beach, CA}{}{}{I developed an API backend and mobile app for a 501(c)(3) nonprofit networking consumers who want to give with soup kitchens who need money. Much of my work involved moving data between an API written and Golang and a PostgreSQL database.}
+
+\section{Open Source Work}
+
+\cventry{\url{github.com/cdipaolo/goml}}{GOML}{Creator}{}{}{}{Second most popular Golang machine learning library ($>$900 stars on Github), and the only machine learning library to use lightweight parallelism to easily train models in an online way from multiple data sources.}
+
+\section{Languages}
+\cvdoubleitem{Native}{English}{Conversational}{Mandarin Chinese}
+
+\section{Programming Languages and Technical Skills}
+\cvitem{Significant Experience}{Python, LaTeX, Tikz, Golang}
+\cvitem{Other Experience}{HTML, Javascript, R, Java, C}
+\quad\\[-2em]
+
+\cvitem{Tools}{Numpy, Scipy, Matplotlib, Pandas, Scikit-Learn, Statsmodels, PyTorch, Flask}
+
+\section{References}
+
+Furnished upon request.
+
+
+%-------------------Publications Section----------------------------------------------------------------
+% The cvitem commands needs to be altered to correctly print all publications with the moderntime package.
+% The cvitem command is edited to remove all forced punctuation within the command.
+% All the typesetting of the text is handled by the modified Biblatex style.
+
+\nocite{*}                                          % Print all publications.
+
+% Format:  \printbibliography[type=Biblatex type,title={Title of publication}]
+% Example: \printbibliography[type=article,title={Journal Publications}]
+% Example: \printbibliography[type=inproceedings,title={Conference Publications}]
+% Example: \printbibliography[type=thesis,title={Thesis}]
+
+\printbibliography[type=article,title={Journal Publications}]
+\printbibliography[type=inproceedings,title={Conference Publications}]
+\printbibliography[type=thesis,title={Thesis}]
+
+\end{document}
