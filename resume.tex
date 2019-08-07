@@ -9,8 +9,7 @@
 
 \name{Conner DiPaolo} % Your name at the top
 
-\address{\textsf{github.com/cdipaolo}}
-\address{\textsf{cdipaolo@hmc.edu} -- \textsf{(949) 300 3774}}
+\address{\textsf{cdipaolo.github.io} -- \textsf{cdipaolo96@gmail.com} -- \textsf{(949) 300 3774}}
 
 \begin{document}
  
@@ -21,42 +20,48 @@
 \vspace{-1em}
 \begin{rSection}{EXPERIENCE}
 
+\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{June 2019 - Present}{Machine Learning Engineer -- {\sl Pricing and Revenue Optimization}}
+
+\item Automated common Redshift analytics requests from enterprise sales associates, reducing turn-around time by 99.9\% (4 days to 5 minutes) and saving the company 66.5\% of the wages spent on the old, manual pipeline.
+\end{rSubsection}
+
 \begin{rSubsection}{Jet Propulsion Lab -- {\it Pasadena, CA}}{June 2018 - August 2018}{Research Intern -- {\sl Deep Space Optical Communications}}
 
-\item Designed improved algorithms for estimation of parameters in a communications link designed
-    to go to space with the Psyche mission in 2022 and applied these methods to closing a downlink
-    control loop.
-\item Developed the first consistent algorithm for optical beam centroiding using low resolution receivers.
-\item Proved sample complexity bounds and concentration inequalities for current and novel estimations schemes.
+\item Mathematically developed improved statistical algorithms for ground communications receiver control which are currently implemented in hardware and slated to join the 2022 Psyche mission to an asteroid near Mars.
 \end{rSubsection}
 
-\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2017 - August 2017}{Intern -- {\sl Ad Creative}}
+\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2017 - August 2017}{Intern -- {\sl Advertisement Optimization}}
 
-\item Project lead for implementing the first trained model for advertisement photo selection
-    within Yelp using a deep neural network (augmented ResNet structure) implemented in PyTorch.
-\item Automatically detected long-standing flaw in cropping infrastructure by maintaining model interpretability.
-\item Designed, organized engineers, and heavily contributed to an internal web app for
-    automated Bayesian analysis of Yelp A/B tests with potential to be used across all of Ads.
+\item Architected a GPU-trained PyTorch-based deep learning model used to select between millions of ad photos.
+\item Generated a statistically significant 4.5\% lift in advertisement click-through rate over status quo photo selection.
 \end{rSubsection}
 
-\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2016 - August 2016}{Intern -- {\sl Spam Team}}
+\begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{May 2016 - August 2016}{Intern -- {\sl Spam and Hate Speech Detection}}
 
-\item Primary contributor to a widely used database replication service marshalling Kafka messages into MySQL.
-\item Integral in design and implementation of a model development framework used across the spam team.
-\item Utilized framework to retrain a stale spam detection language model, currently best performing in
-    the team.
+\item Increased out-of-sample Matthews Correlation of a spam detection model by 25.7\% over the status quo model on points detected by humans as `difficult to classify' by running a principled model search.
+\item Primary author of a service marshalling over 350,000 Kafka messages/day into MySQL tables for four teams.
 \end{rSubsection}
 
-\begin{rSubsection}{Veritone Media -- {\it Newport Beach, CA}}{July 2015 - August 2015}{Intern -- {\sl Public company giving corporations actionable insight into media.}}
+\end{rSection}
 
-\item Developed a production ready, open source sentiment analysis engine using my own machine learning library.
+%----------------------------------------------------------------------------------------
+%   PULICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PUBLICATIONS}
+
+\begin{rSubsection}{A Randomized Algorithm for Preconditioner Selection}{\textsf{arxiv.org/abs/1908.00633}}{By Conner DiPaolo and Weiqing Gu. Submitted. August 2019.}
+
+\item Derived a practically efficient randomized algorithm for a previously difficult preconditioner selection problem.
+\item Created state-of-the-art preconditioned solver for kernel regression using our preconditioner selection algorithm.
 \end{rSubsection}
 
-\begin{rSubsection}{Soulsoup -- {\it Newport Beach, CA}}{December 2014 - August 2015}{Lead Engineer -- {\sl Non-profit networking people who give with people who need. Funded by Veritone founder.}}
+\begin{rSubsection}{Signal Intensity Deconvolution in Optical Receivers}{\textsf{doi.org/10.1109/LCOMM.2019.2912382}}{By Conner DiPaolo and Ryan Rogalin. IEEE Communications Letters. July 2019.}
 
-\item Developed a scalable API in Go interacting with a PostgreSQL database and a
-    mobile frontend.
-\end{rSubsection} 
+\item Developed the first statistically consistent algorithm for estimating the center of a laser communications beam.
+\item Proved non-asymptotic error bounds for the sub-problem of signal/background intensity deconvolution.
+\end{rSubsection}
+
 
 \end{rSection}
 
@@ -66,10 +71,21 @@
 
 \begin{rSection}{OPEN SOURCE}
 
-\begin{rSubsection}{GOML}{\textsf{github.com/cdipaolo/goml}}{Creator - Second most starred Golang machine learning library on Github with $> 900$ stars.}
+\begin{rSubsection}{GOML}{\textsf{github.com/cdipaolo/goml}}{Creator - Second most starred Golang machine learning library on Github with $> 1,000$ stars.}
 
-\item Developed the only library using data channels to train models in an online and parallelizable way.
+\item Developed the only ML library using Golang data channels to train models in an online and parallelizable way.
 \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+
+\textbf{Programming Languages:} Python, SQL, R, Golang, Matlab\\[0em]
+\textbf{Tools \& Technologies:} Numpy, SciPy, Pandas, Git, Redshift, SciKit-Learn, PyTorch, Apache Spark
 
 \end{rSection}
 
@@ -77,26 +93,12 @@
 %   EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-
 \begin{rSection}{EDUCATION}
 
-{{\bf Harvey Mudd College} -- {\it Claremont, CA}} \hfill {\em Expected Graduation 2019} \\ 
-Mathematics -- {\em 3.87 in-major GPA} \hfill {\em 3.81 GPA}\\[-1.25em]
+{{\bf Harvey Mudd College} -- {\it B.S. Mathematics with Departmental Honors}} \hfill {\em 3.84 GPA, 3.88 In-Major GPA}\\[-1.75em]
 
-\begin{rSubsection}{Giovanni Borrelli Mathematics Prize -- {\it Harvey Mudd College}}{September 2018}{Sole Recipient -- ``... and shows promise of contributing in an important way to the mathematical sciences.''}
-\item\quad\\[-3.25em]
-\end{rSubsection}
+\textbf{Awards:} {\it Giovanni Borrelli Mathematics Prize, Chavin Prize, Courtney S. Coleman Prize} 
 
-\begin{rSubsection}{Mathematics of Big Data -- {\it Teaching Assistant}}{\textsf{math189r.github.io}}{}
-
-\quad\\[-4em]
-\end{rSubsection}
-
-
-\begin{rSubsection}{Advanced Linear Algebra -- {\it Teaching Assistant}}{\textsf{math173.github.io}}{}
-
-\item Designed syllabi, created course materials and homework, and lectured review/supplementary material weekly.
-\end{rSubsection}
 \end{rSection}
 
 \end{document}
