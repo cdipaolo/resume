@@ -1,5 +1,6 @@
 \documentclass{resume} % Use the custom resume.cls style
 
+\usepackage{hyperref}
 \usepackage[left=0.50in,top=0.5in,right=0.50in,bottom=0.5in]{geometry} % Document margins
 
 
@@ -9,7 +10,7 @@
 
 \name{Conner DiPaolo} % Your name at the top
 
-\address{\textsf{cdipaolo.github.io} -- \textsf{cdipaolo96@gmail.com} -- \textsf{(949) 300 3774}}
+\address{\textrm{\url{http://dipaolo.xyz}} -- \textsf{\url{cdipaolo96@gmail.com}} -- \textsf{(949) 300 3774}}
 
 \begin{document}
  
@@ -22,9 +23,11 @@
 
 \begin{rSubsection}{Yelp -- {\it San Francisco, CA}}{June 2019 - Present}{Applied Scientist -- {\sl Pricing and Revenue Optimization}}
 
-\item Initiated and led company-wide transition towards more efficient statistical estimators to measure subscriber retention and revenue, which decreased A/B test runtime by 15 days (12-16\% faster than the status quo.)
+\item Designed and implemented the experimental treatment within a project expanding off-Yelp advertiser audiences, reducing Yelp's cost per advertising click by $>$35\% and fulfilling $>$15\% more budget.
 
-\item Led a multi-team project to optimally allocate advertisers' budgets to marketplaces, engineering data processing software with Apache Spark, and working with stakeholders to frame business goals into optimization problems.
+\item Proposed and led an effort to collect randomized price recommendation data for Yelp's advertising product, facilitating training an uplift (RL) model for dynamic pricing now worth millions of dollars in yearly revenue.
+
+\item Initiated and led a company-wide transition towards more efficient statistical estimators to measure subscriber retention and revenue, which decreased A/B test runtime by 15 days (12-16\% faster than the status quo.)
 
 \end{rSubsection}
 
@@ -55,14 +58,12 @@
 
 \begin{rSubsection}{A Randomized Algorithm for Preconditioner Selection}{\textsf{arxiv.org/abs/1908.00633}}{By Conner DiPaolo and Weiqing Gu. Pre-print. August 2019.}
 
-\item Derived a practically efficient randomized algorithm for a previously difficult preconditioner selection problem.
 \item Created state-of-the-art preconditioned solver for kernel regression using our preconditioner selection algorithm.
 \end{rSubsection}
 
 \begin{rSubsection}{Signal Intensity Deconvolution in Optical Receivers}{\textsf{doi.org/10.1109/LCOMM.2019.2912382}}{By Conner DiPaolo and Ryan Rogalin. IEEE Communications Letters. July 2019.}
 
 \item Developed the first consistent algorithm for estimating the center of a discretized communications beam.
-\item Proved non-asymptotic error bounds for the sub-problem of signal/background intensity deconvolution.
 \end{rSubsection}
 
 
